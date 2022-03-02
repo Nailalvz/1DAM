@@ -10,7 +10,7 @@ else
 		echo [Tres] Ocurrencias del nombre del script
 		echo [Fin] Fin
 		read opcion
-		[ $opcion != Fin | F | f | fin]
+		
 		do
 		case $opcion in
 			Uno | uno | U | u | 1) suma=0
@@ -40,6 +40,9 @@ else
 					shift
 				done
 				echo -e "\nEl nombre del script coincide $veces con los argumentos del script"
+				;;
+			Fin | fin | f | F)
+				break
 				;;
 			*) echo -e "La opción no es válida"
 		esac
