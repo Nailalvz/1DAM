@@ -42,10 +42,10 @@ else
 				echo -e "\nEl nombre del script coincide $veces con los argumentos del script"
 				;;
 			Fin | fin | f | F)
+				echo Fin del programa
 				break
 				;;
 			*) echo -e "La opción no es válida"
 		esac
 	done
-	echo Fin del programa
 fi
